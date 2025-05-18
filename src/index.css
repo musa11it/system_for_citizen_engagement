@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add these classes at the end of your index.css file */
+.animate-in {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}
+
+.transition-all {
+  transition-property: all;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
