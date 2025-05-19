@@ -6,12 +6,16 @@
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build",
-        "installCommand": "npm install --force",
-        "buildCommand": "npm run build"
+        "installCommand": "npm install",
+        "buildCommand": "CI=false npm run build"
       }
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "^/static/(.*)", "dest": "/static/$1" },
+    { "src": "^/favicon.ico", "dest": "/favicon.ico" },
+    { "src": "^/manifest.json", "dest": "/manifest.json" },
+    { "src": "^/robots.txt", "dest": "/robots.txt" },
+    { "src": "^/(.*)", "dest": "/index.html" }
   ]
 }
