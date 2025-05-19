@@ -98,19 +98,51 @@ const HomePage = () => {
               <BiMessageSquareDetail className="text-2xl mr-2" />
               <span className="text-lg font-semibold">Submit Complaint</span>
             </Link>
-            <Link
-              to="/track-complaint"
-              className="flex items-center px-8 py-4 bg-green-600 text-white rounded-lg shadow-lg hover:bg-green-700 transform hover:scale-105 transition duration-300"
-            >
-              <MdOutlineTrackChanges className="text-2xl mr-2" />
-              <span className="text-lg font-semibold">Track Complaint</span>
-            </Link>
           </div>
 
-          {/* Agency Section Title */}
-          <h2 className="text-3xl font-bold text-gray-800 mb-8">Our Partner Agencies</h2>
-          
-          {/* Dynamic Agency List */}
+          {/* Services Section */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Services</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* Water Services */}
+              <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <div className="text-center">
+                  <MdWaterDrop className="text-5xl text-blue-500 mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Water Services</h3>
+                  <p className="text-gray-600">Report water-related issues including leaks, quality concerns, and supply disruptions</p>
+                </div>
+              </div>
+
+              {/* Electrical Services */}
+              <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <div className="text-center">
+                  <MdElectricalServices className="text-5xl text-yellow-500 mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Electrical Services</h3>
+                  <p className="text-gray-600">Report power outages, electrical hazards, and street lighting issues</p>
+                </div>
+              </div>
+
+              {/* Road Maintenance */}
+              <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <div className="text-center">
+                  <MdEditRoad className="text-5xl text-gray-500 mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Road Maintenance</h3>
+                  <p className="text-gray-600">Report potholes, road damage, traffic signals, and street signs issues</p>
+                </div>
+              </div>
+
+              {/* Complaint Tracking */}
+              <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <div className="text-center">
+                  <MdOutlineTrackChanges className="text-5xl text-green-500 mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Track Complaints</h3>
+                  <p className="text-gray-600">Monitor the status and progress of your submitted complaints</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Agencies Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredAgencies.map(agency => (
               <div key={agency._id} className="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
