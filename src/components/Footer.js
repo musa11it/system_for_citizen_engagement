@@ -35,8 +35,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Contact Info</h3>
             <ul className="space-y-2 text-gray-300">
-              <li>Email: support@citizenengagement.com</li>
-              <li>Phone: (123) 456-7890</li>
+              <li>Email: intangishatsemusa@gmail.com</li>
+              <li>Phone: 0787065734</li>
               <li>Address: 123 Main Street, City</li>
             </ul>
           </div>
@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-300">
-          <p>© 2024 Citizen Engagement System. All rights reserved.</p>
+          <p>© 2025 Citizen Engagement System. All rights reserved.</p>
         </div>
       </div>
     </footer>

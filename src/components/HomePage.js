@@ -98,6 +98,13 @@ const HomePage = () => {
               <BiMessageSquareDetail className="text-2xl mr-2" />
               <span className="text-lg font-semibold">Submit Complaint</span>
             </Link>
+            <Link
+              to="/track-complaint"
+              className="flex items-center px-8 py-4 bg-green-600 text-white rounded-lg shadow-lg hover:bg-green-700 transform hover:scale-105 transition duration-300"
+            >
+              <MdOutlineTrackChanges className="text-2xl mr-2" />
+              <span className="text-lg font-semibold">Track Complaint</span>
+            </Link>
           </div>
 
           {/* Services Section */}

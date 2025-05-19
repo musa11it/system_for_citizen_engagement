@@ -34,7 +34,7 @@ const Header = () => {
             <Link to="/" className="text-2xl font-bold flex items-center">
               <img 
                 src="/uploads/pic.jpg" 
-                alt="Citizen Engagement Logo" 
+                alt="" 
                 className="h-10 w-auto"
               />
             </Link>

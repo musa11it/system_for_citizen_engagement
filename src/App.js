@@ -11,6 +11,9 @@ import TrackComplaint from './components/TrackComplaint';
 import Login from './components/Login';
 import Register from './components/Register';
 import AboutUs from './components/AboutUs';
+import HowItWorks from './components/HowItWorks';
+import Contact from './components/Contact';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
             <Route path="/super-admin" element={<SuperAdminDashboard />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/how-it-works" element={<HowItWorks />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </Layout>
       </Router>
