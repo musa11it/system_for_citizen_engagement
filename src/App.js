@@ -18,7 +18,7 @@ function App() {
       <Router>
         <Layout>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route exact path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/submit-complaint" element={<ComplaintForm />} />
             <Route path="/track-complaint" element={<TrackComplaint />} />
