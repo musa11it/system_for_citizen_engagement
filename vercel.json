@@ -3,11 +3,15 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/node",
-      "config": { "maxLambdaSize": "50mb" }
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build",
+        "installCommand": "npm install --force",
+        "buildCommand": "npm run build"
+      }
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/" }
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
