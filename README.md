@@ -88,7 +88,7 @@ A comprehensive web application for managing citizen complaints and engagement w
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/citizen_engagement_system.git
+git clone https://github.com/musa11it/system_for_citizen_engagement.git
 
 6. Open your browser and navigate to:
 - Frontend: http://localhost:3000
@@ -97,7 +97,7 @@ git clone https://github.com/yourusername/citizen_engagement_system.git
 ## Accessing the System
 
 ### Online Demo
-You can view the frontend demo at: <mcurl name="Citizen Engagement System" url="https://system-for-citizen-engagement.vercel.app/"></mcurl>
+You can view the frontend demo at: https://system-for-citizen-engagement.vercel.app/
 
 **Important Note:** The online demo is frontend-only as Vercel's free tier doesn't support backend deployment. For full functionality, please follow the local setup instructions below.
 
@@ -107,4 +107,4 @@ For full functionality including backend features, follow these steps:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/citizen_engagement_system.git
+git clone https://github.com/musa11it/system_for_citizen_engagement.git
